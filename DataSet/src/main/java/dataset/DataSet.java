@@ -16,4 +16,8 @@ public abstract class DataSet<T> {
     public Collection<T> getContext() {
         return context;
     }
+
+    public void setContext(Collection<T> context) {
+        this.context = context;
+    }
 }
