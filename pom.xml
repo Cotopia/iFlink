@@ -11,6 +11,8 @@
     <modules>
         <module>StreamSet</module>
         <module>DataSet</module>
-        <module>aFlink</module>
     </modules>
+    <dependencies>
+
+    </dependencies>
 </project>

@@ -1,4 +1,4 @@
-package functions.util;
+package org.cotopia.iflink.functions.util;
 
 /**
  * Created by Acceml on 2016/4/11

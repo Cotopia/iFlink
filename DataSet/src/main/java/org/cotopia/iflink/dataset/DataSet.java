@@ -1,4 +1,4 @@
-package dataset;
+package org.cotopia.iflink.dataset;
 
 import java.util.Collection;
 
