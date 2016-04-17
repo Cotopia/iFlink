@@ -1,4 +1,4 @@
-package org.cotopia.iflink.enviroment;
+package org.cotopia.iflink.api.enviroment;
 
 /**
  * Created by Acceml on 2016/3/31
