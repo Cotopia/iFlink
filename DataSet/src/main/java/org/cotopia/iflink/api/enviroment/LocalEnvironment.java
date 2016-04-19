@@ -32,5 +32,6 @@ public class LocalEnvironment extends ExecutionEnvironment {
         if (this.sinks.isEmpty()) {
             throw new NullPointerException("data sink can not be null");
         }
+        return null;
     }
 }
