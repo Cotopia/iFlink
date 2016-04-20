@@ -1,8 +1,8 @@
 package org.cotopia.iflink.api.operators;
 
-import org.cotopia.iflink.api.common.Plan;
+import org.cotopia.iflink.api.driver.Plan;
 import org.cotopia.iflink.api.dataset.DataSet;
-import org.cotopia.iflink.api.common.Operator;
+import org.cotopia.iflink.api.driver.Operator;
 
 import java.util.HashMap;
 import java.util.List;

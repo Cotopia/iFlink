@@ -1,11 +1,7 @@
 package org.cotopia.iflink.api.enviroment;
 
 import org.cotopia.iflink.api.JobExecutionResult;
-import org.cotopia.iflink.api.common.Plan;
-import org.cotopia.iflink.api.operators.DataSink;
-
-import java.util.ArrayList;
-import java.util.List;
+import org.cotopia.iflink.api.driver.Plan;
 
 /**
  * Created by Acceml on 2016/4/14
@@ -13,9 +9,8 @@ import java.util.List;
  */
 public class LocalEnvironment extends ExecutionEnvironment {
 
-    private final List<DataSink<?>> sinks = new ArrayList<>();
-
     protected LocalEnvironment() {
+        super();
     }
 
     @Override
@@ -32,6 +27,7 @@ public class LocalEnvironment extends ExecutionEnvironment {
         if (this.sinks.isEmpty()) {
             throw new NullPointerException("data sink can not be null");
         }
+
         return null;
     }
 }

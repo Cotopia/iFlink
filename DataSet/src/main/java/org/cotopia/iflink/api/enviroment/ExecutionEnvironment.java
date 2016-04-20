@@ -2,15 +2,20 @@ package org.cotopia.iflink.api.enviroment;
 
 import org.cotopia.iflink.api.JobExecutionResult;
 import org.cotopia.iflink.api.dataset.DataSource;
+import org.cotopia.iflink.api.operators.DataSink;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 
 /**
  * Created by Acceml on 2016/3/31
  * Email: huminghit@gmail.com
  */
 public abstract class ExecutionEnvironment {
+
+    protected final List<DataSink<?>> sinks = new ArrayList<>();
 
     private static ExecutionEnviromentFactory contextEnvironmentFactory;
 
@@ -37,4 +42,8 @@ public abstract class ExecutionEnvironment {
     }
 
     public abstract JobExecutionResult execute(String jobName) throws Exception;
+
+    public void registerDataSink(DataSink<?> sink) {
+        this.sinks.add(sink);
+    }
 }

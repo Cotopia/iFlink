@@ -1,4 +1,4 @@
-package org.cotopia.iflink.api.common;
+package org.cotopia.iflink.api.driver;
 
 /**
  * Created by Acceml on 2016/4/17.
